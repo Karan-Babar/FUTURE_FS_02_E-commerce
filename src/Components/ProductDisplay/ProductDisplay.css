@@ -57,3 +57,30 @@
     font-size: 16px;
     font-weight: 600;
 }
+.productdisplay-right-sizes{
+    display: flex;
+    margin: 25px 0px;
+    gap: 20px;
+}
+.productdisplay-right-sizes div{
+    padding: 16px 22px;
+    background: #fbfbfb;
+    border: 2px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.productdisplay-right button{
+    padding: 18px 40px;
+    width: 170px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.productdisplay-right-category span{
+    font-weight: 600;
+}
