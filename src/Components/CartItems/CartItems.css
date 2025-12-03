@@ -50,6 +50,13 @@
     justify-content:space-between;
     padding: 15px 0px;
 }
+.cartitems-total-item-total{
+      display: flex;
+    justify-content:space-between;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
 .cartitems-total button{
     width: 252px;
     height: 48px;
