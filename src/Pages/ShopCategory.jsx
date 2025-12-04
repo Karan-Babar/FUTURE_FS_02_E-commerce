@@ -1,10 +1,15 @@
-import React, { useContext } from 'react'
+import React, { useContext,useEffect } from 'react'
 import './CSS/ShopCategory.css'
 import { ShopContext } from '../Context/ShopContext';
 import dropdown_icon from '../Components/Assets/dropdown_icon.png'
 import Item from '../Components/Item/Item'
 
 const ShopCategory = (props) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const {all_product} = useContext(ShopContext);
   return (
     <div className='shop-category'>

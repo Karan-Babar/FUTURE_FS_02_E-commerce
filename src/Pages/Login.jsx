@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import './CSS/Login.css'
 
 const Login = () => {
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
+
   return (
     <div className='login'>
       <div className="login-container">
