@@ -31,6 +31,7 @@
     outline: none;
     color: #5c5c5c;
     font-size: 18px;
+    border-radius:  8px;
 }
 .login-container button{
     width: 414px;
@@ -42,6 +43,7 @@
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 20px;
 }
 .login-login{
     margin-top: 20px;
@@ -61,4 +63,64 @@
     color: #5c5c5c;
     font-size: 18px;
     font-weight: 500;
+}
+@media(max-width:500px){
+    .login{
+    width: 100%;
+    height: 80vh;
+    background: #da803f;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.login-container{
+    width: 230px;
+    height: 280px;
+    margin: auto;
+    border-radius: 3%;
+    padding: 40px 50px;
+    margin-top: 90px;
+}
+.login-container h1{
+    margin-top: -15px;
+    font-size: 20px;
+    margin-left: -20px;
+}
+.login-fields{
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-left: -20px;
+}
+.login-fields input{
+    height: 32px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 14px;
+}
+.login-container button{
+    width: 190px;
+    height: 32px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 18px;
+}
+.login-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 13px;
+    font-weight: 500;
+}
+.login-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 12px;
+    font-weight: 500;
+}
 }
