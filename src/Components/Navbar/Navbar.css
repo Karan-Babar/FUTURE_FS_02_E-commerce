@@ -150,3 +150,16 @@
         transform: rotate(90deg);
     }
 }
+@media(max-width:500px){
+    .navbar{
+        width: 8px 0px;
+        height: 40px;
+    }
+    .nav-menu{
+        height: 70px;
+        top: 50px;
+    }
+    .nav-login-cart{
+        transform: scale(0.8);
+    }
+}

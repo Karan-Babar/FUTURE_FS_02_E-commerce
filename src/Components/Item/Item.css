@@ -1,5 +1,13 @@
 .item{
-    width: 350px;
+    width: 330px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: -70px;
+}
+.item img{
+    width: 330px;
 }
 .item p{
     margin: 6px 0px;
@@ -22,4 +30,13 @@
 .item:hover{
     transform: scale(1.05);
     transition: 1s;
+}
+@media(max-width:1280px){
+    .item{
+        width: 280px;
+        font-size: 14px;
+    }
+    .item img{
+        width: 270px;
+    }
 }
