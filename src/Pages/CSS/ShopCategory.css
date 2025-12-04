@@ -41,3 +41,24 @@
 .shopcategory-loadmore:hover{
     background: #b9b6b6;
 }
+@media(max-width:500px){
+   .shopcategory-loadmore{
+     width: 135px;
+     height: 45px;
+      font-size: 14px;
+      margin-top: 100px;
+      margin-bottom: 30px;
+   }
+   .shopcategory-indexSort{
+    margin: 0px 30px;
+    font-size: 14px;
+    margin-bottom: -30px;
+   }
+   .shopcategory-sort{
+    padding: 5px 10px;
+    font-size: 12px;
+   }
+   .shopcategory-products{
+    row-gap: 60px;
+   }
+}
