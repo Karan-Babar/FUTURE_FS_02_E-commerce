@@ -1,11 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import './CSS/Login.css'
+import axios from "axios";
 
 const Login = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
 useEffect(() => {
   window.scrollTo(0, 0);
 }, []);
+
+ const handleSignup = async () => {
+    try {
+      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+        name,
+        email,
+        password
+      });
+
+      alert("Account Created Successfully!");
+      console.log(response.data);
+
+    } catch (error) {
+      console.error(error);
+      alert("Signup Failed");
+    }
+  };
 
 
   return (
