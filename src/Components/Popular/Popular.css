@@ -23,4 +23,7 @@
     display: flex;
     gap: 15px;    
 }
+.popular-item img{
+    border: 1px solid black;
+}
 

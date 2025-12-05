@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./CSS/Login.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const navigate = useNavigate(); 
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,8 +28,9 @@ const Login = () => {
 
     } catch (error) {
       console.error(error);
-      alert("Signup Failed");
+      // alert("Signup Failed");
     }
+    navigate("/");
   };
 
   return (
