@@ -1,5 +1,5 @@
-import React, { useEffect,useState } from "react";
-import './CSS/Login.css'
+import React, { useState, useEffect } from "react";
+import "./CSS/Login.css";
 import axios from "axios";
 
 const Login = () => {
@@ -8,13 +8,13 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
- const handleSignup = async () => {
+  const handleSignup = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+      const response = await axios.post("http://localhost:5000/api/user/signup", {
         name,
         email,
         password
@@ -29,25 +29,29 @@ useEffect(() => {
     }
   };
 
-
   return (
     <div className='login'>
       <div className="login-container">
         <h1>Sign Up</h1>
         <div className="login-fields">
-          <input type='text' placeholder='Your Name'/>
-          <input type='email' placeholder='Email Address'/>
-          <input type='password' placeholder='Password'/>
+          <input type='text' placeholder='Your Name' value={name} onChange={(e) => setName(e.target.value)} />
+          <input type='email' placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button>Continue</button>
-        <p className='login-login'>Already have an account? <span>Login here</span></p>
+
+        <button onClick={handleSignup}>Continue</button>
+
+        <p className='login-login'>
+          Already have an account? <span>Login here</span>
+        </p>
+
         <div className="login-agree">
-          <input type='checkbox' name='' id=''/>
-          <p>By continuing, i agree to the terms of use & privacy policy.</p>
+          <input type='checkbox' />
+          <p>By continuing, I agree to the terms of use & privacy policy.</p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
