@@ -1,58 +1,15 @@
-.hero{
-    height: 88vh;
-    background: #F2E9E4;
-    display: flex;
+.hero {
+  height: 90vh; 
+  background: #F2E9E4;
+  display: flex;
+  overflow: hidden;
 }
-.hero-left{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
-}
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
-    font-weight: 600;
-}
-.hero-left p{
-    color: #171717;
-    font-size: 50px;
-    font-weight: 700;
-}
-.hero-hand-icon{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.hero-hand-icon img{
-    width: 105px;
-}
-.hero-latest-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.hero-right{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero-right img{
-    width: 460px;
-    margin-right: 100px;
-    margin-bottom: 30px;
+
+.hero-img img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;      
+  object-position: center; 
+  margin-left: 52px;
+ margin-top: 30px;
 }
